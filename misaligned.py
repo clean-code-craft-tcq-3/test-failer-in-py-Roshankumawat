@@ -5,7 +5,7 @@ def print_color_map():
     for i, major in enumerate(major_colors):
         for j, minor in enumerate(minor_colors):
             checkValidPairNumber(i * 5 + j)
-            print(f'{i * 5 + j} | {major} | {minor}')
+            print(f'{i * 5 + j : <2} | {major:<6} | {minor:<6}')
     return len(major_colors) * len(minor_colors)
 def checkValidPairNumber(pair_number):
     assert(pair_number<1)
